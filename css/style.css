@@ -27,6 +27,7 @@ body{
 	height: 800px;
 	float: left;
 	position: relative;
+	white-space: nowrap;
 	z-index: 2;
 }
 
@@ -58,7 +59,11 @@ body{
 	color: #9EBFFF;
 }
 
-#block_left img{
+#menu-icon{
+	display: none;
+}
+
+#menu img{
 	margin: 32px;
 }
 
@@ -292,7 +297,11 @@ body{
 
 @media screen and (max-width: 1023px) and (min-width: 768px){
 	body{
-		padding: 51px 10%;
+		padding: 51px 5%;
+	}
+
+	#block_left{
+		width: 26%;
 	}
 }
 
@@ -320,7 +329,7 @@ body{
 	}	
 }
 
-@media screen and (max-width: 765px) and (min-width: 480px){
+@media screen and (max-width: 767px) and (min-width: 520px){
 	body{
 		padding: 0;
 	}
@@ -340,6 +349,67 @@ body{
 	}
 }
 
-@media screen and(max-width: 720px){
-	
+@media screen and (max-width: 720px){
+
+	#data_card h3{
+		margin-top: 24px;
+	}
+
+	#front_card{
+		margin-top:0;
+	}
+
+	#back_card{
+		position: relative;
+		margin: 10px 0;
+	}
+
+	#back_card input{
+		margin-left: 178px;
+		margin-right: 23px;
+	}
+
+	#btn input{
+		margin-top: 10px;
+	}	
+}
+
+@media screen and (max-width: 540px) and (min-width: 320px){
+	body{
+		padding: 0;
+	}
+
+	#block_left{
+		width: auto;
+	}
+
+	#menu-icon{
+		display: block;
+		width: 60px;
+		height: 60px;
+	}
+
+	#menu{
+		display: none;
+	}
+
+	#menu img{
+		margin: 16px;
+	}
+
+	#block_links{
+		margin-top: 73px;
+	}
+
+	#block_links li a{
+		padding: 6px 10px;
+	}
+
+	#block_right_header p{
+		margin-bottom: 10px;
+	}
+
+	#block_right_body{
+		padding-right: 0;
+	}
 }
