@@ -21,6 +21,10 @@ body{
 	padding: 51px 119px;
 }
 
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
 .container{
 	white-space: nowrap;
 }
@@ -38,7 +42,6 @@ body{
 
 #block_right{
 	background-color: #FFFFFF;
-	/*width: 69%;*/
 	display: inline-block;
 	white-space: normal;
 }

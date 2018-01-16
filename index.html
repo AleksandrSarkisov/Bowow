@@ -53,32 +53,34 @@
 				</div>
 				<div id="data_card">
 					<h3>Данные банковской карты</h3>
-					<div id="front_card">
-						<p>Номер карты</p>
-						<div id="num_card">
-							<input type="text" name="">
-							<input type="text" name="">
-							<input type="text" name="">
-							<input type="text" name="">
+					<form>
+						<div id="front_card">
+							<p>Номер карты</p>
+							<div id="num_card">
+								<input type="text" name="">
+								<input type="number" name="">
+								<input type="number" name="">
+								<input type="number" name="">
+							</div>
+							<p>Номер карты</p>
+							<div id="date_card">
+								<select id="month"></select>
+								<select id="year"></select>
+							</div>
+							<div id="owner_card">
+								<input type="text" name="owner" placeholder="Имя держателя карты" minlength="4">
+							</div>
 						</div>
-						<p>Номер карты</p>
-						<div id="date_card">
-							<select id="month"></select>
-							<select id="year"></select>
+						<div id="back_card">
+							<hr>
+							<p>Код CVVC2 / CVC2</p><br>
+							<input type="number" name="cvc" id="cvc" size="3" maxlength="3">
 						</div>
-						<div id="owner_card">
-							<input type="text" name="" placeholder="Имя держателя карты">
-						</div>
-					</div>
-					<div id="back_card">
-						<hr>
-						<p>Код CVVC2 / CVC2</p><br>
-						<input type="text" name="">
-					</div>
+					</form>
 				</div>
 				<div id="btn">
-					<input id="pay" type="submit" name="" value="Оплатить">
-					<input id="cancel" type="submit" name="" value="Отмена">
+					<input id="pay" type="submit" name="pay" value="Оплатить">
+					<input id="cancel" type="submit" name="cancel" value="Отмена">
 				</div>
 			</div>
 			<!--Футер правого блока-->
