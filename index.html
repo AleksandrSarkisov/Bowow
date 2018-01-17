@@ -57,10 +57,10 @@
 						<div id="front_card">
 							<p>Номер карты</p>
 							<div id="num_card">
-								<input type="text" name="">
-								<input type="number" name="">
-								<input type="number" name="">
-								<input type="number" name="">
+								<input type="text" name="" maxlength="4">
+								<input type="text" name="" maxlength="4">
+								<input type="text" name="" maxlength="4">
+								<input type="text" name="" maxlength="4">
 							</div>
 							<p>Номер карты</p>
 							<div id="date_card">
@@ -68,13 +68,13 @@
 								<select id="year"></select>
 							</div>
 							<div id="owner_card">
-								<input type="text" name="owner" placeholder="Имя держателя карты" minlength="4">
+								<input type="text" name="owner" placeholder="Имя держателя карты" pattern="[A-Za-z]{4,}">
 							</div>
 						</div>
 						<div id="back_card">
 							<hr>
 							<p>Код CVVC2 / CVC2</p><br>
-							<input type="number" name="cvc" id="cvc" size="3" maxlength="3">
+							<input type="text" name="cvc" id="cvc" maxlength="3">
 						</div>
 					</form>
 				</div>
