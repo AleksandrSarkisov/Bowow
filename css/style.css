@@ -192,7 +192,9 @@ input[type=number] {
 	height: 32px;
 }
 
-#date_card select{
+#month, #year{
+	display: inline-block;
+	position: relative;
 	border: 1px solid #DBE7FF;
 	border-radius: 3px;
 	-webkit-border-radius: 3px;
@@ -200,9 +202,7 @@ input[type=number] {
 	outline: none;
 	background-color: #FFFFFF;
 	color: #161F4D;
-	text-align: center;	
 	margin-top: 8px;
-	margin-right: 4.35px;
 	width: 64px;
 	height: 32px;
 	-webkit-appearance: none;
@@ -217,8 +217,57 @@ input[type=number] {
 	background-size: 12px;
 }
 
-#date_card select::-ms-expand{
-	display: none;
+#month span, #year span{
+	display: block;
+	position: relative;
+	padding: 10px;
+	padding-right: 15px;
+	padding-bottom: 7px;
+	text-align: center;
+}
+
+#month div, #year div{
+	width: 100%;
+	background: #fff;
+	position: absolute;
+	border: 1px solid #DBE7FF;
+	border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	left: -1px;
+	margin-top: -1px;
+	/*border-top: none;*/
+}
+
+.hide{
+	visibility: hidden;
+}
+
+.show{
+	visibility: visible;
+}
+
+#options{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	text-align: left;
+	width: 100%;
+}
+
+.options{
+	cursor: default;
+}
+
+.options:hover{
+	background-color: #dbe7ff;
+}
+
+#options hr{
+	margin: 0;
+	border: none;
+	height: 1px;
+	background-color: #DBE7FF;
 }
 
 #owner_card input{
@@ -433,6 +482,10 @@ input[type=number] {
 }
 
 @media screen and (max-width: 500px){
+
+	#block_right_header{
+		height: auto;
+	}
 
 	#block_right_body, #block_right_footer{
 		padding-left: 10px;

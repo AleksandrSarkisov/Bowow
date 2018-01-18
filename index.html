@@ -57,24 +57,30 @@
 						<div id="front_card">
 							<p>Номер карты</p>
 							<div id="num_card">
-								<input type="text" name="" maxlength="4">
-								<input type="text" name="" maxlength="4">
-								<input type="text" name="" maxlength="4">
-								<input type="text" name="" maxlength="4">
+								<input type="text" value="" maxlength="4" pattern="[0-9]{4}">
+								<input type="text" value="" maxlength="4" pattern="[0-9]{4}">
+								<input type="text" value="" maxlength="4" pattern="[0-9]{4}">
+								<input type="text" value="" maxlength="4" pattern="[0-9]{4}">
 							</div>
 							<p>Номер карты</p>
 							<div id="date_card">
-								<select id="month"></select>
-								<select id="year"></select>
+								<div id="month">
+									<span id="res" data-value=""></span>
+									<div class="hide"><ul id="options"></ul></div>
+								</div>
+								<div id="year">
+									<span id="res" data-value=""></span>
+									<div class="hide"><ul id="options"></ul></div>
+								</div>
 							</div>
 							<div id="owner_card">
-								<input type="text" name="owner" placeholder="Имя держателя карты" pattern="[A-Za-z]{4,}">
+								<input type="text" value="" placeholder="Имя держателя карты" pattern="[A-Za-z]{4,}\s">
 							</div>
 						</div>
 						<div id="back_card">
 							<hr>
 							<p>Код CVVC2 / CVC2</p><br>
-							<input type="text" name="cvc" id="cvc" maxlength="3">
+							<input id="cvc" type="text" value="" maxlength="3" pattern="[0-9]{3}">
 						</div>
 					</form>
 				</div>
